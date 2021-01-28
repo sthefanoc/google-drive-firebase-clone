@@ -13,7 +13,7 @@ export default function Dashboard() {
   const { folderId } = useParams()
   const { state = {} } = useLocation()
   const { folder, childFolders, childFiles } = useFolder(folderId, state.folder)
-
+  
   return (
     <>
       <Navbar />
